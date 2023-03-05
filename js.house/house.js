@@ -59,3 +59,25 @@
   } else {
       alert('Не правильно ввели логин');
   }
+
+
+
+  const options = {
+    name: "Тест",
+    height: 600,
+    widht: 1024,
+    colors: {
+        color: "black",
+        bg: "Red"
+    }
+}
+
+for (let key in options) {
+    if (typeof(options[key]) === "object") {
+        for (let i in options[key]) {
+            console.log(`Свойство ${i} значение ${options[key][i]}`);
+        }
+    } else {
+        console.log(`Свойство ${key} значение ${options[key]}`);
+    }
+}
