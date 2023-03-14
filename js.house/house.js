@@ -81,3 +81,38 @@ for (let key in options) {
         console.log(`Свойство ${key} значение ${options[key]}`);
     }
 }
+
+
+const Newoptions = {
+    arr: [1, 2, 7, 4, 2, 4, 7, 8, 10],
+ 
+     read() {
+         this.tru = +prompt("Сколько вам лет?", "");
+     },
+ 
+     ifElse () {
+         if (this.tru > 18) {
+            alert ("Хорошо, введите логин");
+            this.tru = prompt("Ввод Логина:", "");
+            } else {
+            alert ("Я вас не знаю");
+            }
+         
+            if (this.tru == "Твой Создатель") {
+            alert ("Отлично, если вы мой создатель то введите секретный пароль"); 
+            this.tru = prompt ("Ввод пароля:", "");
+            } else {
+            alert ("Пароль не верный!");
+            } 
+             
+            if (this.tru == 2465676) {
+              alert ("Рад вас видеть создатель!");
+            } else {
+              alert ("Вы обманщик");
+            }
+     },
+ };
+ 
+ Newoptions.read();
+ Newoptions.ifElse();
+ 
